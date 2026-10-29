@@ -1,17 +1,16 @@
-# Web · Vehículos con chófer para bodas y eventos
+# La Capota · Golf Cabrio clásico (web)
 
-## 1. Tus datos
-Abre `script.js` y edita el bloque `CONFIG`: nombre de la marca, zona, teléfono, WhatsApp, email, Instagram, color del coche y precios (si dejas un precio en `null` se muestra "Bajo presupuesto").
+Toda la web está en un único archivo: `index.html`.
 
-## 2. Foto de tu Golf
-Guarda la foto como `img/golf.jpg`. Mejor en horizontal, de al menos 1600 px de ancho. Mientras no exista, la web muestra un marcador.
+## Cambiar tus datos
+Abre `index.html`, baja casi hasta el final y edita el bloque `CONFIG`: nombre, zona, teléfono, WhatsApp, email, Instagram, año, color y precios.
 
-## 3. Fotos de ambiente
-Están alojadas en Higgsfield (las URL que contienen `cloudfront.net` en `index.html`). Si prefieres tenerlas dentro de la web, descárgalas desde tu biblioteca de Higgsfield, guárdalas en `img/` y cambia esas URL por `img/nombre.jpg`.
+## Poner las fotos de tu Golf
+1. Crea una carpeta `img` junto a `index.html` y mete ahí tus fotos (por ejemplo `golf-1.jpg`, `golf-2.jpg`…).
+2. En `CONFIG`, rellena `fotos: ["img/golf-1.jpg", "img/golf-2.jpg", "img/golf-3.jpg", "img/golf-4.jpg"]`.
+   La primera sale en la portada; las siguientes, en la sección "El coche".
+Mientras no haya fotos se muestra un dibujo del Golf Cabrio.
 
-## 4. Revisa los textos
-Comprueba que lo que dice la web coincide con tu servicio: señal para reservar, factura a empresas, horas incluidas en cada tarifa, plazas, respuesta en 24 h…
-
-## 5. Publicar en Netlify
-Arrastra la carpeta `web` a Netlify (o conecta el repositorio: `netlify.toml` ya apunta a `web`).
-Las solicitudes del formulario aparecen en Netlify > tu sitio > Forms; ahí puedes activar que te lleguen por email.
+## Publicar en Netlify
+Arrastra la carpeta que contiene `index.html` (no una carpeta que la contenga a ella) a Netlify > tu sitio > Deploys.
+Para recibir las reservas: Netlify > Forms > Enable form detection, y vuelve a publicar.

@@ -1,40 +1,329 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cortejo · Vehículos con chófer para bodas y eventos</title>
-  <meta name="description" content="Alquiler de vehículos con chófer para bodas, eventos corporativos y celebraciones. Decoración a medida y precio cerrado.">
-  <meta property="og:title" content="Cortejo · Vehículos con chófer para bodas y eventos">
-  <meta property="og:description" content="Llegar también es parte del día. Vehículo con chófer, decoración a medida y precio cerrado.">
-  <meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/e48a6271-7068-4e89-8558-3f7aa95ea134.jpg">
-  <meta name="theme-color" content="#0f0e0d">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f0e0d'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='20' fill='%23f4f1ec' text-anchor='middle' font-style='italic'%3EC%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://d2ol7oe51mr4n9.cloudfront.net">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/e48a6271-7068-4e89-8558-3f7aa95ea134.jpg">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Capota · Golf Cabrio clásico para bodas y rodajes</title>
+<meta name="description" content="Alquiler de un Volkswagen Golf Cabriolet MK1 con capota beige y asientos blancos, con conductor. Para bodas, sesiones de fotos, publicidad y rodajes.">
+<meta property="og:title" content="La Capota · Golf Cabrio clásico para bodas y rodajes">
+<meta property="og:description" content="Un descapotable clásico con conductor para tu boda, tu sesión de fotos o tu producción.">
+<meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/773bd2ce-5dce-40a6-ae03-91a4108097b1.jpg">
+<meta name="theme-color" content="#fbf8f3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2324211d'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='19' font-style='italic' fill='%23e6d7bc' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://d2ol7oe51mr4n9.cloudfront.net">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbf8f3;
+  --white: #ffffff;
+  --sand: #f2ebdf;
+  --beige: #d9c6a5;
+  --beige-d: #b39b72;
+  --ink: #24211d;
+  --mute: #6e675e;
+  --olive: #59603f;
+  --olive-d: #474d31;
+  --line: rgba(36, 33, 29, .12);
+  --serif: "Instrument Serif", Georgia, serif;
+  --sans: "Figtree", system-ui, -apple-system, sans-serif;
+  --wrap: 1240px;
+  --gut: clamp(20px, 4.5vw, 56px);
+  --r: 18px;
+  --ease: cubic-bezier(.2, .7, .1, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
+body { font: 400 17px/1.6 var(--sans); color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+::selection { background: var(--beige); }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -.01em; }
+h1 em, h2 em, h3 em { font-style: italic; color: var(--olive); }
+h2 { font-size: clamp(2.4rem, 5vw, 3.9rem); line-height: 1.02; }
+h3 { font-size: 1.9rem; line-height: 1.1; }
+.eyebrow { display: inline-flex; align-items: center; gap: .6rem; font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--beige-d); margin-bottom: 1.2rem; }
+.eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--beige); }
+.lead { font-size: 1.12rem; color: var(--mute); max-width: 52ch; }
+
+/* Botones */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; height: 52px; padding: 0 1.6rem; border-radius: 999px; font-weight: 600; font-size: .96rem; border: 1px solid transparent; cursor: pointer; transition: background .2s, color .2s, border-color .2s, transform .2s; white-space: nowrap; }
+.btn:hover { transform: translateY(-1px); }
+.btn-dark { background: var(--ink); color: var(--bg); }
+.btn-dark:hover { background: #000; }
+.btn-olive { background: var(--olive); color: #fff; }
+.btn-olive:hover { background: var(--olive-d); }
+.btn-line { border-color: var(--ink); }
+.btn-line:hover { background: var(--ink); color: var(--bg); }
+.btn-wa { background: #fff; border-color: var(--line); }
+.btn-wa:hover { border-color: var(--ink); }
+.btn-wa svg { width: 20px; height: 20px; color: #1fa855; }
+.btn-sm { height: 42px; padding: 0 1.15rem; font-size: .9rem; }
+.btn-block { width: 100%; }
+
+/* Cabecera */
+.hdr { position: sticky; top: 0; z-index: 100; background: rgba(251, 248, 243, .9); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); transition: box-shadow .3s; }
+.hdr.scrolled { box-shadow: 0 1px 0 var(--line); }
+.hdr-in { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.logo { display: flex; flex-direction: column; line-height: 1; }
+.logo b { font-family: var(--serif); font-weight: 400; font-size: 1.85rem; font-style: italic; }
+.logo small { font-size: .66rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--mute); margin-top: .3rem; }
+.menu { display: flex; gap: 2rem; font-size: .95rem; font-weight: 500; }
+.menu a { color: var(--mute); transition: color .2s; }
+.menu a:hover { color: var(--ink); }
+.hdr-cta { display: flex; gap: .6rem; align-items: center; }
+.burger { display: none; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: #fff; cursor: pointer; position: relative; }
+.burger i { position: absolute; left: 13px; right: 13px; height: 1.5px; background: var(--ink); transition: transform .3s var(--ease), top .3s; }
+.burger i:first-child { top: 18px; } .burger i:last-child { top: 25px; }
+.burger[aria-expanded="true"] i:first-child { top: 21px; transform: rotate(45deg); }
+.burger[aria-expanded="true"] i:last-child { top: 21px; transform: rotate(-45deg); }
+
+/* Portada */
+.hero { padding: clamp(2rem, 5vw, 4rem) 0 clamp(3rem, 7vw, 6rem); }
+.hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.hero h1 { font-size: clamp(3rem, 5.4vw, 5rem); line-height: 1; margin-bottom: 1.5rem; }
+.hero .lead { margin-bottom: 2.2rem; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 2.4rem; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; }
+.chips li { display: inline-flex; align-items: center; gap: .45rem; padding: .45rem .9rem; border-radius: 999px; background: var(--sand); font-size: .86rem; font-weight: 500; }
+.chips li::before { content: "✓"; color: var(--olive); font-weight: 700; font-size: .8rem; }
+
+.frame { position: relative; border-radius: var(--r); overflow: hidden; background: var(--sand); }
+.hero-photo { aspect-ratio: 4/4.6; }
+.frame > img { width: 100%; height: 100%; object-fit: cover; }
+.frame.empty > img { display: none; }
+.illus { position: absolute; inset: 0; display: none; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; background: radial-gradient(120% 80% at 50% 100%, #efe3cf 0%, var(--sand) 60%); }
+.frame.empty .illus { display: flex; }
+.illus svg { width: min(92%, 520px); height: auto; }
+.tag { position: absolute; left: 1rem; bottom: 1rem; z-index: 2; background: rgba(255,255,255,.92); backdrop-filter: blur(8px); border-radius: 12px; padding: .7rem 1rem; font-size: .84rem; line-height: 1.35; box-shadow: 0 10px 30px -12px rgba(36,33,29,.3); }
+.tag b { display: block; font-weight: 600; }
+.tag > span { color: var(--mute); }
+
+/* Datos rápidos */
+.facts { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--white); }
+.facts-in { display: grid; grid-template-columns: repeat(4, 1fr); }
+.fact { padding: 1.6rem 1.2rem; text-align: center; }
+.fact + .fact { border-left: 1px solid var(--line); }
+.fact b { display: block; font-family: var(--serif); font-weight: 400; font-size: 2.3rem; line-height: 1.05; }
+.fact span { font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+
+/* Secciones */
+.sec { padding: clamp(4.5rem, 10vw, 8rem) 0; }
+.sec-sand { background: var(--sand); }
+.head { max-width: 760px; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.head.center { text-align: center; margin-left: auto; margin-right: auto; }
+.head .lead { margin-top: 1.2rem; }
+.head.center .lead { margin-left: auto; margin-right: auto; }
+
+/* Dos usos */
+.uses { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 2.5vw, 2rem); }
+.use { background: var(--white); border-radius: var(--r); overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--line); }
+.use-img { aspect-ratio: 16/11; overflow: hidden; }
+.use-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.use:hover .use-img img { transform: scale(1.04); }
+.use-body { padding: clamp(1.6rem, 3vw, 2.4rem); display: flex; flex-direction: column; flex: 1; }
+.use-body h3 { font-size: 2.4rem; margin-bottom: .6rem; }
+.use-body > p { color: var(--mute); margin-bottom: 1.4rem; }
+.ticks { list-style: none; display: grid; gap: .65rem; margin-bottom: 2rem; flex: 1; }
+.ticks li { display: flex; gap: .7rem; font-size: .98rem; }
+.ticks li::before { content: ""; flex: none; width: 18px; height: 18px; margin-top: .2rem; border-radius: 50%; background: var(--sand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.3l2.6 2.5L13 6.4' fill='none' stroke='%2359603f' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat; }
+.use-foot { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.4rem; border-top: 1px solid var(--line); flex-wrap: wrap; }
+.from { font-family: var(--serif); font-size: 1.9rem; line-height: 1.1; }
+.from small { display: block; font-family: var(--sans); font-size: .82rem; color: var(--mute); }
+
+/* El coche */
+.car-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.car-gal { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.car-gal .frame { aspect-ratio: 1; }
+.car-gal .frame:first-child { grid-column: 1 / -1; aspect-ratio: 16/10; }
+.car-gal.solo .frame { aspect-ratio: 4/3.4; }
+.car-text .lead { margin: 1.2rem 0 2rem; }
+.specs { border-top: 1px solid var(--line); }
+.specs div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .95rem 0; border-bottom: 1px solid var(--line); }
+.specs dt { color: var(--mute); }
+.specs dd { font-weight: 500; text-align: right; }
+
+/* Banner */
+.banner { position: relative; min-height: clamp(420px, 62vw, 640px); overflow: hidden; display: flex; align-items: flex-start; }
+.banner img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
+.banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(251,248,243,.85) 0%, rgba(251,248,243,.25) 38%, rgba(251,248,243,0) 60%); }
+.banner .wrap { position: relative; z-index: 1; width: 100%; padding-top: clamp(3rem, 7vw, 5.5rem); text-align: center; }
+.banner p { font-family: var(--serif); font-size: clamp(2.2rem, 5.2vw, 4.4rem); line-height: 1.04; }
+.banner p em { color: var(--olive); }
+
+/* Tarifas */
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.plan { background: var(--white); border: 1px solid var(--line); border-radius: var(--r); padding: clamp(1.6rem, 3vw, 2.2rem); display: flex; flex-direction: column; }
+.plan-k { font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--beige-d); margin-bottom: .6rem; }
+.plan h3 { margin-bottom: .5rem; }
+.plan > p:not(.plan-k):not(.price) { color: var(--mute); font-size: .95rem; min-height: 3.1em; }
+.price { font-family: var(--serif); font-size: 2.8rem; line-height: 1; margin: 1.6rem 0 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+.price small { font-family: var(--sans); font-size: .82rem; color: var(--mute); display: block; margin-bottom: .45rem; }
+.price.ask { font-size: 2.1rem; font-style: italic; }
+.plan .ticks { margin-bottom: 1.8rem; }
+.plan-hl { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.plan-hl > p:not(.plan-k):not(.price), .plan-hl .price small { color: rgba(251,248,243,.65); }
+.plan-hl .price { border-color: rgba(251,248,243,.15); }
+.plan-hl .ticks li::before { background-color: rgba(255,255,255,.12); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.3l2.6 2.5L13 6.4' fill='none' stroke='%23d9c6a5' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+.plan-hl .plan-k { color: var(--beige); }
+.plan-hl .btn-line { border-color: var(--bg); }
+.plan-hl .btn-line:hover { background: var(--bg); color: var(--ink); }
+.note { text-align: center; color: var(--mute); font-size: .92rem; margin-top: 2rem; }
+
+/* Pasos */
+.steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.5rem, 3vw, 3rem); counter-reset: s; }
+.steps li { counter-increment: s; }
+.steps li::before { content: counter(s); display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--ink); font-family: var(--serif); font-size: 1.6rem; margin-bottom: 1.4rem; }
+.steps h3 { font-size: 1.7rem; margin-bottom: .5rem; }
+.steps p { color: var(--mute); }
+
+/* Preguntas */
+.faq-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+.faq-side { position: sticky; top: 110px; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq details:first-child { border-top: 1px solid var(--line); }
+.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.35rem 0; font-weight: 500; font-size: 1.06rem; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; flex: none; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--sand); font-size: 1.2rem; transition: transform .3s var(--ease); }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { color: var(--mute); padding: 0 3rem 1.4rem 0; }
+
+/* Reserva */
+.book-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.contact { display: grid; gap: .7rem; margin-top: 2rem; }
+.contact a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.1rem 1.3rem; background: var(--white); border: 1px solid var(--line); border-radius: 14px; transition: border-color .2s, background .2s; }
+.contact a:hover { border-color: var(--ink); }
+.contact span { color: var(--mute); font-size: .9rem; }
+.contact b { font-weight: 600; }
+.contact .wa { background: #1fa855; color: #fff; border-color: #1fa855; }
+.contact .wa span { color: rgba(255,255,255,.85); }
+.contact .wa:hover { background: #198f48; border-color: #198f48; }
+
+.form { background: var(--white); border: 1px solid var(--line); border-radius: var(--r); padding: clamp(1.4rem, 3.5vw, 2.6rem); display: grid; gap: 1.1rem; }
+.seg { border: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.seg legend, .lbl { display: block; font-size: .86rem; font-weight: 600; margin-bottom: .55rem; }
+.seg label { cursor: pointer; }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg span { display: inline-block; padding: .6rem 1.1rem; border-radius: 999px; border: 1px solid var(--line); font-size: .92rem; transition: all .2s; }
+.seg label:hover span { border-color: var(--ink); }
+.seg input:checked + span { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.seg input:focus-visible + span { outline: 2px solid var(--olive); outline-offset: 2px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.field input, .field textarea { width: 100%; padding: .85rem 1rem; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); font-size: 1rem; outline: 0; transition: border-color .2s, background .2s; appearance: none; -webkit-appearance: none; min-height: 52px; }
+.field input:focus, .field textarea:focus { border-color: var(--ink); background: #fff; }
+.field textarea { resize: vertical; min-height: 6rem; }
+.chk { display: flex; gap: .7rem; align-items: flex-start; font-size: .88rem; color: var(--mute); cursor: pointer; }
+.chk input { width: 18px; height: 18px; margin-top: .15rem; accent-color: var(--olive); flex: none; }
+.ok { text-align: center; padding: clamp(2rem, 5vw, 3.5rem) 1rem; }
+.ok h3 { font-size: 2.4rem; margin-bottom: .8rem; }
+.ok p { color: var(--mute); }
+
+/* Pie */
+.ftr { background: var(--ink); color: rgba(251,248,243,.7); padding: clamp(3.5rem, 7vw, 5rem) 0 2rem; }
+.ftr-top { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 2rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(251,248,243,.12); }
+.ftr .logo b { font-size: clamp(2.6rem, 6vw, 4rem); color: var(--bg); }
+.ftr .logo small { color: rgba(251,248,243,.55); }
+.ftr-links { display: flex; flex-wrap: wrap; gap: .5rem 1.8rem; font-size: .95rem; }
+.ftr-links a:hover, .ftr-bot a:hover { color: var(--bg); }
+.ftr-bot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding-top: 1.6rem; font-size: .85rem; }
+
+/* Barra móvil */
+.mbar { display: none; }
+
+/* Animación de entrada */
+.js .rv { opacity: 0; transform: translateY(22px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.js .rv.in { opacity: 1; transform: none; }
+
+/* Responsive */
+@media (min-width: 881px) { .menu .menu-cta { display: none; } }
+@media (max-width: 1020px) {
+  .menu { gap: 1.4rem; }
+  .hdr-cta .btn-wa { display: none; }
+}
+@media (max-width: 880px) {
+  .burger { display: block; }
+  .hdr-cta .btn-dark { display: none; }
+  .menu { position: fixed; top: 76px; left: 0; right: 0; height: calc(100vh - 76px); height: calc(100svh - 76px); flex-direction: column; gap: 0; padding: 1rem var(--gut) 2rem; background: var(--bg); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: opacity .25s, transform .25s var(--ease), visibility .25s; }
+  .menu.open { opacity: 1; visibility: visible; transform: none; }
+  .menu a { font-family: var(--serif); font-size: 2.2rem; color: var(--ink); padding: .7rem 0; border-bottom: 1px solid var(--line); }
+  .menu .menu-cta { margin-top: 1.6rem; border: 0; border-radius: 999px; background: var(--ink); color: var(--bg); text-align: center; font-family: var(--sans); font-size: 1rem; font-weight: 600; padding: 1rem; }
+  .hero-grid, .car-grid, .faq-grid, .book-grid { grid-template-columns: 1fr; }
+  .hero-photo { aspect-ratio: 4/3.3; order: -1; }
+  .facts-in { grid-template-columns: 1fr 1fr; }
+  .fact:nth-child(3) { border-left: 0; }
+  .fact:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .uses, .plans { grid-template-columns: 1fr; }
+  .plans { max-width: 560px; margin: 0 auto; }
+  .steps { grid-template-columns: 1fr; }
+  .faq-side { position: static; }
+  .mbar { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; padding: .6rem .7rem calc(.6rem + env(safe-area-inset-bottom)); background: rgba(251,248,243,.94); backdrop-filter: blur(12px); border-top: 1px solid var(--line); transform: translateY(110%); transition: transform .35s var(--ease); }
+  .mbar.show { transform: none; }
+  .mbar .btn { height: 48px; padding: 0 .8rem; }
+  .ftr { padding-bottom: 6rem; }
+}
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .hero h1 { font-size: clamp(2.6rem, 12vw, 3.4rem); }
+  .hero-cta .btn { flex: 1 1 100%; }
+  .row { grid-template-columns: 1fr; }
+  .faq details p { padding-right: 0; }
+  .fact b { font-size: 1.9rem; }
+  .use-foot .btn { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js .rv { opacity: 1; transform: none; }
+}
+</style>
 </head>
 <body>
 
-<!-- Tus datos (teléfono, WhatsApp, precios…) se editan en script.js → CONFIG -->
+<!-- Para cambiar teléfono, WhatsApp, precios, fotos… edita el bloque CONFIG al final de este archivo -->
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Icono de WhatsApp -->
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></symbol>
+  <!-- Dibujo del Golf Cabrio MK1 (se muestra mientras no haya fotos reales) -->
+  <symbol id="golf" viewBox="0 0 600 220">
+    <line x1="20" y1="193" x2="580" y2="193" stroke="#cdbb9b" stroke-width="2"/>
+    <path d="M420 107 Q428 82 468 82 Q508 82 518 106 Z" fill="#d9c6a5" stroke="#24211d" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M300 108 L313 64 Q316 57 324 57 L342 57 Q350 57 352 65 L358 108" fill="none" stroke="#24211d" stroke-width="2.6" stroke-linejoin="round"/>
+    <rect x="268" y="84" width="24" height="26" rx="6" fill="#fff" stroke="#24211d" stroke-width="2"/>
+    <rect x="372" y="86" width="24" height="24" rx="6" fill="#fff" stroke="#24211d" stroke-width="2"/>
+    <path d="M214 109 L247 59 L257 59 L231 109" fill="#f4efe6" stroke="#24211d" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M58 150 L58 131 Q60 117 78 115 L214 108 L534 106 Q548 106 548 121 L548 150 Q548 159 539 159 L489 159 A34 34 0 0 0 421 159 L184 159 A34 34 0 0 0 116 159 L67 159 Q58 159 58 150 Z" fill="#fff" stroke="#24211d" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M300 113 L300 155 M412 112 L412 136" stroke="#24211d" stroke-width="1.6"/>
+    <path d="M318 122 L340 122" stroke="#24211d" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M60 136 L150 132 L470 129 L546 129" fill="none" stroke="#b39b72" stroke-width="1.6"/>
+    <rect x="50" y="142" width="22" height="9" rx="3" fill="#24211d"/>
+    <rect x="538" y="140" width="20" height="9" rx="3" fill="#24211d"/>
+    <rect x="62" y="122" width="12" height="9" rx="2" fill="#f2e7c9" stroke="#24211d" stroke-width="1.6"/>
+    <rect x="534" y="114" width="10" height="12" rx="2" fill="#c96a4a" stroke="#24211d" stroke-width="1.4"/>
+    <g fill="#fff" stroke="#24211d" stroke-width="2.4"><circle cx="150" cy="166" r="27"/><circle cx="455" cy="166" r="27"/></g>
+    <g fill="#e9e1d3" stroke="#24211d" stroke-width="1.6"><circle cx="150" cy="166" r="14"/><circle cx="455" cy="166" r="14"/></g>
+  </symbol>
+</svg>
 
 <header class="hdr" id="hdr">
-  <div class="hdr-in">
-    <a href="#" class="logo" aria-label="Inicio"><span data-cfg="marca">Cortejo</span></a>
+  <div class="wrap hdr-in">
+    <a href="#" class="logo" aria-label="Inicio"><b data-cfg="marca">La Capota</b><small>Golf Cabrio clásico</small></a>
     <nav class="menu" id="menu" aria-label="Principal">
-      <a href="#ocasiones">Ocasiones</a>
-      <a href="#vehiculo">El vehículo</a>
+      <a href="#bodas">Bodas</a>
+      <a href="#rodajes">Rodajes</a>
+      <a href="#coche">El coche</a>
       <a href="#tarifas">Tarifas</a>
-      <a href="#proceso">Cómo funciona</a>
       <a href="#faq">Preguntas</a>
-      <a href="#reserva" class="menu-cta">Reservar fecha</a>
+      <a href="#reserva" class="menu-cta">Consultar fecha</a>
     </nav>
     <div class="hdr-cta">
-      <a class="hdr-tel" data-tel href="#"><span data-cfg="telefono"></span></a>
-      <a href="#reserva" class="b b-light">Reservar</a>
+      <a href="#" class="btn btn-wa btn-sm" data-wa>WhatsApp</a>
+      <a href="#reserva" class="btn btn-dark btn-sm">Consultar fecha</a>
       <button class="burger" id="burger" aria-label="Menú" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
     </div>
   </div>
@@ -42,279 +331,225 @@
 
 <main>
 
-<!-- ───────────── HERO ───────────── -->
+<!-- PORTADA -->
 <section class="hero">
-  <picture class="hero-img">
-    <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/e48a6271-7068-4e89-8558-3f7aa95ea134.jpg" alt="Coche negro decorado con lazo de seda blanca frente a una finca iluminada al anochecer" fetchpriority="high">
-  </picture>
-  <div class="hero-shade"></div>
-
-  <div class="hero-body wrap">
-    <p class="kicker light reveal"><span data-cfg="zona"></span></p>
-    <h1 class="reveal">Llegar también<br>es parte <em>del día.</em></h1>
-    <p class="hero-sub reveal">Vehículo con chófer para bodas, eventos y celebraciones. Lo decoramos a juego con tu evento y nos ocupamos de cada trayecto, con precio cerrado.</p>
-  </div>
-
-  <form class="quick reveal" id="quick" aria-label="Consultar disponibilidad">
-    <label class="qf">
-      <span>Evento</span>
-      <select name="evento">
-        <option>Boda</option>
-        <option>Evento corporativo</option>
-        <option>Comunión o bautizo</option>
-        <option>Sesión de fotos / rodaje</option>
-        <option>Otro</option>
-      </select>
-    </label>
-    <label class="qf">
-      <span>Fecha</span>
-      <input type="date" name="fecha" required>
-    </label>
-    <label class="qf">
-      <span>Recogida</span>
-      <input type="text" name="recogida" placeholder="Población o dirección">
-    </label>
-    <button class="b b-accent qf-btn" type="submit">Consultar disponibilidad <span aria-hidden="true">→</span></button>
-  </form>
-</section>
-
-<!-- ───────────── GARANTÍAS ───────────── -->
-<section class="assure" aria-label="Lo que incluye">
-  <div class="wrap assure-in">
-    <div><b>Chófer incluido</b><span>Uniformado y discreto</span></div>
-    <div><b>Decoración a medida</b><span>Flores y lazos a juego</span></div>
-    <div><b>Precio cerrado</b><span>Sin extras sorpresa</span></div>
-    <div><b>Respuesta en 24 h</b><span>Por teléfono o WhatsApp</span></div>
-  </div>
-</section>
-
-<!-- ───────────── INTRO ───────────── -->
-<section class="intro sec">
-  <div class="wrap intro-grid">
-    <div class="intro-text">
-      <p class="kicker reveal">La casa</p>
-      <p class="statement reveal">Un día así no admite improvisación. Por eso <em>cuidamos el coche, el horario y cada detalle</em> para que tú solo tengas que disfrutar del trayecto.</p>
-      <div class="intro-cols reveal">
-        <p>Antes del evento revisamos contigo horarios, direcciones y tiempos de espera. El coche llega limpio, decorado y antes de la hora.</p>
-        <p>Durante el día, el chófer está pendiente de ti y del fotógrafo: abre la puerta, espera lo necesario y lleva a cada uno a su sitio.</p>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow rv">Volkswagen Golf Cabriolet MK1</p>
+      <h1 class="rv">Un descapotable clásico para <em>bodas y rodajes.</em></h1>
+      <p class="lead rv">Capota beige, asientos blancos y todo el encanto de un clásico. Lo alquilamos con conductor para tu boda, tu sesión de fotos o tu producción<span data-zona-txt></span>.</p>
+      <div class="hero-cta rv">
+        <a href="#reserva" class="btn btn-dark">Consultar disponibilidad</a>
+        <a href="#" class="btn btn-wa" data-wa>Escribir por WhatsApp</a>
       </div>
+      <ul class="chips rv">
+        <li>Con conductor</li>
+        <li>Decoración para bodas</li>
+        <li>Listo para cámara</li>
+      </ul>
     </div>
-    <figure class="intro-fig reveal">
-      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/13685517-abc1-46b2-8aac-1235b8568bf7.jpg" alt="Ramo de rosas blancas y olivo atado con lazo de seda a la manilla del coche" loading="lazy">
-      <figcaption>Decoración floral incluida, a juego con tu evento.</figcaption>
+    <figure class="frame hero-photo rv" data-photo="portada">
+      <img alt="Volkswagen Golf Cabriolet MK1 con capota beige">
+      <div class="illus"><svg viewBox="0 0 600 220" role="img" aria-label="Dibujo del Golf Cabriolet MK1"><use href="#golf"/></svg></div>
+      <figcaption class="tag"><b>Golf Cabriolet MK1 · <span data-cfg="anio"></span></b><span>Capota beige · tapicería blanca</span></figcaption>
     </figure>
   </div>
 </section>
 
-<!-- ───────────── OCASIONES ───────────── -->
-<section class="sec sec-dark" id="ocasiones">
+<!-- DATOS -->
+<section class="facts" aria-label="Datos del coche">
+  <div class="wrap facts-in">
+    <div class="fact rv"><b data-cfg="anio"></b><span>Año</span></div>
+    <div class="fact rv"><b>1.8</b><span>Motor</span></div>
+    <div class="fact rv"><b>4</b><span>Plazas</span></div>
+    <div class="fact rv"><b>Beige</b><span>Capota de lona</span></div>
+  </div>
+</section>
+
+<!-- BODAS Y RODAJES -->
+<section class="sec">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker light reveal">Ocasiones</p>
-      <h2 class="reveal">Para cualquier día<br>que merezca <em>una buena entrada.</em></h2>
+    <div class="head center">
+      <p class="eyebrow rv">Para qué se alquila</p>
+      <h2 class="rv">Dos formas de <em>disfrutarlo.</em></h2>
     </div>
-    <div class="occ">
-      <a href="#reserva" class="occ-card reveal" data-evento="Boda">
-        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/3b0b3050-9f10-402c-bb95-0955a7138cd3.jpg" alt="Pareja de novios caminando entre olivos hacia el coche decorado" loading="lazy">
-        <div class="occ-txt"><span>01</span><h3>Bodas</h3><p>Recogida, llegada a la ceremonia, sesión de fotos y traslado al banquete.</p></div>
-      </a>
-      <a href="#reserva" class="occ-card reveal" data-evento="Evento corporativo">
-        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/3c7a5355-1ca2-44c1-86c1-3394b7ab2cab.jpg" alt="Coche llegando de noche a la entrada de un hotel para una gala" loading="lazy">
-        <div class="occ-txt"><span>02</span><h3>Corporativo</h3><p>Traslado de invitados, directivos o ponentes. Galas, congresos y presentaciones.</p></div>
-      </a>
-      <a href="#reserva" class="occ-card reveal" data-evento="Comunión o bautizo">
-        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/51c7a20d-a4e4-431e-9e8d-61c32bdec8f7.jpg" alt="Novia bajando del coche sobre un empedrado" loading="lazy">
-        <div class="occ-txt"><span>03</span><h3>Celebraciones</h3><p>Comuniones, bautizos, aniversarios, graduaciones o una pedida de mano.</p></div>
-      </a>
-      <a href="#reserva" class="occ-card reveal" data-evento="Sesión de fotos / rodaje">
-        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/d9faec7e-d2d6-4dd8-b763-d21146154462.jpg" alt="Chófer con guantes blancos abriendo la puerta del coche frente a una iglesia" loading="lazy">
-        <div class="occ-txt"><span>04</span><h3>Fotos y rodajes</h3><p>Preboda, postboda, videoclips o publicidad. Coche y conductor por horas.</p></div>
-      </a>
+    <div class="uses">
+      <article class="use rv" id="bodas">
+        <div class="use-img"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/4e709496-1139-4f82-8f2c-ccc0d3cfda55.jpg" alt="Novia con velo caminando entre olivos" loading="lazy"></div>
+        <div class="use-body">
+          <h3>Bodas</h3>
+          <p>El coche de la novia que todos recuerdan en las fotos. Llegada a la ceremonia, salida como recién casados y sesión de fotos con la capota abierta.</p>
+          <ul class="ticks">
+            <li>Conductor durante todo el servicio</li>
+            <li>Lazos y flores a juego con tu boda</li>
+            <li>Recogida, ceremonia, fotos y banquete</li>
+            <li>Capota abierta o cerrada según el día</li>
+          </ul>
+          <div class="use-foot">
+            <p class="from" data-price="boda"></p>
+            <a href="#reserva" class="btn btn-olive" data-tipo="Boda">Reservar para mi boda</a>
+          </div>
+        </div>
+      </article>
+      <article class="use rv" id="rodajes">
+        <div class="use-img"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/dd20f38c-5be4-4459-8496-a76893a95054.jpg" alt="Cámara de cine y claqueta en un rodaje junto al mar" loading="lazy"></div>
+        <div class="use-body">
+          <h3>Rodajes y sesiones</h3>
+          <p>Un clásico ochentero que da carácter a cualquier plano. Para publicidad, videoclips, cortos, editoriales de moda, preboda o postboda.</p>
+          <ul class="ticks">
+            <li>Por horas, media jornada o jornada completa</li>
+            <li>Coche impecable, listo para cámara</li>
+            <li>Desplazamiento a la localización</li>
+            <li>Factura para productoras y agencias</li>
+          </ul>
+          <div class="use-foot">
+            <p class="from" data-price="rodaje"></p>
+            <a href="#reserva" class="btn btn-olive" data-tipo="Rodaje / publicidad">Consultar rodaje</a>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ───────────── VEHÍCULO ───────────── -->
-<section class="sec" id="vehiculo">
-  <div class="wrap">
-    <div class="sec-head row">
-      <div>
-        <p class="kicker reveal">El vehículo</p>
-        <h2 class="reveal">Volkswagen <em>Golf</em></h2>
-      </div>
-      <p class="sec-lead reveal">Compacto, elegante y cómodo. Entra donde otros no llegan: cascos históricos, fincas con caminos estrechos y calles sin aparcamiento.</p>
-    </div>
-
-    <div class="car reveal">
-      <div class="car-photo" id="carPhoto">
-        <img src="img/golf.jpg" alt="Volkswagen Golf" loading="lazy" data-optional>
-        <div class="car-ph">
-          <svg viewBox="0 0 400 140" aria-hidden="true"><path d="M20 108h360M48 108c0-14 11-25 25-25s25 11 25 25M302 108c0-14 11-25 25-25s25 11 25 25M38 96l6-26c3-10 10-15 20-17l52-10 46-24c8-4 16-6 25-6h70c12 0 22 5 30 14l26 30 40 8c10 2 17 10 17 20v11" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-          <span>Añade la foto de tu Golf en <code>img/golf.jpg</code></span>
-        </div>
-      </div>
-      <dl class="specs">
-        <div><dt>Modelo</dt><dd>Volkswagen Golf</dd></div>
-        <div><dt>Color</dt><dd data-cfg="color"></dd></div>
-        <div><dt>Pasajeros</dt><dd>Hasta 4 + chófer</dd></div>
-        <div><dt>Confort</dt><dd>Climatizador · interior impecable</dd></div>
-        <div><dt>Decoración</dt><dd>Lazos y flores a juego, incluida</dd></div>
+<!-- EL COCHE -->
+<section class="sec sec-sand" id="coche">
+  <div class="wrap car-grid">
+    <div class="car-gal rv" id="gal"></div>
+    <div class="car-text">
+      <p class="eyebrow rv">El coche</p>
+      <h2 class="rv">Un icono de los <em>años 80.</em></h2>
+      <p class="lead rv">El Golf Cabriolet de primera generación es uno de los descapotables más reconocibles de Europa: líneas rectas, el arco central característico y una capota de lona que se abre en un momento. El nuestro está cuidado al detalle.</p>
+      <dl class="specs rv">
+        <div><dt>Modelo</dt><dd>Volkswagen Golf Cabriolet (MK1)</dd></div>
+        <div><dt>Año</dt><dd data-cfg="anio"></dd></div>
+        <div><dt>Motor</dt><dd>1.8 gasolina</dd></div>
+        <div><dt>Carrocería</dt><dd data-cfg="color"></dd></div>
+        <div><dt>Capota</dt><dd>Lona beige</dd></div>
+        <div><dt>Tapicería</dt><dd>Blanca</dd></div>
+        <div><dt>Plazas</dt><dd>4 (conductor incluido)</dd></div>
         <div><dt>Zona</dt><dd data-cfg="zona"></dd></div>
       </dl>
     </div>
   </div>
 </section>
 
-<!-- ───────────── TARIFAS ───────────── -->
-<section class="sec sec-bone" id="tarifas">
+<!-- BANNER -->
+<section class="banner" aria-label="Carretera entre olivos">
+  <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/773bd2ce-5dce-40a6-ae03-91a4108097b1.jpg" alt="" loading="lazy">
+  <div class="wrap"><p class="rv">Capota abierta, carretera<br>y un día <em>para recordar.</em></p></div>
+</section>
+
+<!-- TARIFAS -->
+<section class="sec" id="tarifas">
   <div class="wrap">
-    <div class="sec-head center">
-      <p class="kicker reveal">Tarifas</p>
-      <h2 class="reveal">Precio cerrado, <em>sin letra pequeña.</em></h2>
-      <p class="sec-lead reveal">Todas las tarifas incluyen chófer, combustible, decoración y limpieza del vehículo.</p>
+    <div class="head center">
+      <p class="eyebrow rv">Tarifas</p>
+      <h2 class="rv">Precios claros, <em>sin sorpresas.</em></h2>
+      <p class="lead rv">Conductor, combustible y limpieza incluidos. Dinos fecha y lugar y te damos un precio cerrado.</p>
     </div>
     <div class="plans">
-      <article class="plan reveal">
-        <h3>Ceremonia</h3>
-        <p class="plan-desc">El trayecto clave: de casa a la ceremonia, y de la ceremonia al banquete.</p>
-        <p class="plan-price" data-price="ceremonia"></p>
-        <ul>
-          <li>Recogida y llegada a la ceremonia</li>
-          <li>Traslado al banquete</li>
-          <li>Decoración estándar</li>
-          <li>Hasta 3 horas de servicio</li>
-        </ul>
-        <a href="#reserva" class="b b-line" data-plan="Ceremonia">Pedir presupuesto</a>
-      </article>
-      <article class="plan plan-hl reveal">
-        <p class="plan-tag">El más elegido</p>
-        <h3>Día completo</h3>
-        <p class="plan-desc">Todo el día a vuestra disposición, incluida la sesión de fotos.</p>
-        <p class="plan-price" data-price="completo"></p>
-        <ul>
-          <li>Todos los trayectos del día</li>
-          <li>Parada para sesión de fotos</li>
-          <li>Decoración floral personalizada</li>
-          <li>Hasta 6 horas de servicio</li>
-        </ul>
-        <a href="#reserva" class="b b-accent" data-plan="Día completo">Pedir presupuesto</a>
-      </article>
-      <article class="plan reveal">
+      <article class="plan rv">
+        <p class="plan-k">Sesión de fotos</p>
         <h3>Por horas</h3>
-        <p class="plan-desc">Eventos corporativos, celebraciones, sesiones de fotos y rodajes.</p>
-        <p class="plan-price" data-price="hora"></p>
-        <ul>
-          <li>Mínimo 2 horas</li>
-          <li>Rutas y paradas a medida</li>
-          <li>Decoración opcional</li>
-          <li>Factura para empresas</li>
-        </ul>
-        <a href="#reserva" class="b b-line" data-plan="Por horas">Pedir presupuesto</a>
+        <p>Preboda, postboda, editoriales o retratos con el coche como protagonista.</p>
+        <p class="price" data-price="sesion"></p>
+        <ul class="ticks"><li>Mínimo 2 horas</li><li>Conductor incluido</li><li>Cambios de ubicación</li></ul>
+        <a href="#reserva" class="btn btn-line btn-block" data-tipo="Sesión de fotos">Consultar</a>
+      </article>
+      <article class="plan plan-hl rv">
+        <p class="plan-k">El más pedido</p>
+        <h3>Boda</h3>
+        <p>Todos los trayectos del gran día, con decoración a juego.</p>
+        <p class="price" data-price="boda"></p>
+        <ul class="ticks"><li>Recogida, ceremonia y banquete</li><li>Parada para la sesión de fotos</li><li>Lazos y flores incluidos</li></ul>
+        <a href="#reserva" class="btn btn-line btn-block" data-tipo="Boda">Reservar mi fecha</a>
+      </article>
+      <article class="plan rv">
+        <p class="plan-k">Producciones</p>
+        <h3>Rodaje</h3>
+        <p>Publicidad, videoclips, cine y televisión. Media jornada o jornada completa.</p>
+        <p class="price" data-price="rodaje"></p>
+        <ul class="ticks"><li>Coche y conductor en set</li><li>Desplazamiento a localización</li><li>Factura con IVA</li></ul>
+        <a href="#reserva" class="btn btn-line btn-block" data-tipo="Rodaje / publicidad">Pedir presupuesto</a>
       </article>
     </div>
-    <p class="plans-note reveal">Desplazamientos fuera de la zona habitual y horas extra, bajo presupuesto.</p>
+    <p class="note rv">Desplazamientos fuera de la zona habitual, horas extra y servicios especiales, bajo presupuesto.</p>
   </div>
 </section>
 
-<!-- ───────────── PROCESO ───────────── -->
-<section class="sec" id="proceso">
+<!-- CÓMO FUNCIONA -->
+<section class="sec sec-sand">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker reveal">Cómo funciona</p>
-      <h2 class="reveal">De la consulta <em>al “sí, quiero”.</em></h2>
+    <div class="head">
+      <p class="eyebrow rv">Cómo funciona</p>
+      <h2 class="rv">Reservar es <em>muy fácil.</em></h2>
     </div>
     <ol class="steps">
-      <li class="reveal"><span class="n">1</span><h3>Consulta</h3><p>Nos dices fecha, horario y lugares. Te confirmamos disponibilidad y precio en menos de 24 h.</p></li>
-      <li class="reveal"><span class="n">2</span><h3>Reserva</h3><p>Una señal bloquea tu fecha. Desde ese momento el coche es tuyo ese día.</p></li>
-      <li class="reveal"><span class="n">3</span><h3>Detalles</h3><p>Unos días antes cerramos ruta, tiempos y decoración: colores, flores, lazos.</p></li>
-      <li class="reveal"><span class="n">4</span><h3>El gran día</h3><p>Llegamos antes de la hora, con el coche impecable. Tú solo disfruta.</p></li>
+      <li class="rv"><h3>Cuéntanos tu plan</h3><p>Fecha, horario y lugares. Por el formulario o por WhatsApp, como prefieras.</p></li>
+      <li class="rv"><h3>Te damos precio</h3><p>Te confirmamos disponibilidad y un precio cerrado, normalmente en el mismo día.</p></li>
+      <li class="rv"><h3>Reservamos la fecha</h3><p>Una señal bloquea el día. Antes del evento cerramos ruta, horarios y decoración.</p></li>
     </ol>
   </div>
 </section>
 
-<!-- ───────────── BANNER ───────────── -->
-<section class="banner">
-  <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/4a24b887-98b4-40ca-8192-1dda38b4c894.jpg" alt="" loading="lazy">
-  <div class="banner-shade"></div>
-  <div class="wrap banner-in">
-    <p class="banner-q reveal">“Los invitados recuerdan<br>cómo llegaste.”</p>
-    <a href="#reserva" class="b b-light reveal">Reservar mi fecha</a>
-  </div>
-</section>
-
-<!-- ───────────── FAQ ───────────── -->
+<!-- PREGUNTAS -->
 <section class="sec" id="faq">
   <div class="wrap faq-grid">
     <div class="faq-side">
-      <p class="kicker reveal">Preguntas frecuentes</p>
-      <h2 class="reveal">Lo que nos <em>suelen preguntar.</em></h2>
-      <p class="sec-lead reveal">¿No encuentras tu respuesta? <a href="#" data-wa class="ul">Escríbenos por WhatsApp</a>.</p>
+      <p class="eyebrow rv">Preguntas frecuentes</p>
+      <h2 class="rv">Lo que más <em>nos preguntan.</em></h2>
+      <p class="lead rv" style="margin-top:1.2rem">¿Otra duda? <a href="#" data-wa style="text-decoration:underline">Escríbenos por WhatsApp</a>.</p>
     </div>
     <div class="faq">
-      <details class="reveal"><summary>¿Con cuánta antelación tengo que reservar?</summary><p>Lo antes posible: los sábados de mayo a octubre se reservan con meses de antelación. Escríbenos con tu fecha y te confirmamos al momento si está libre.</p></details>
-      <details class="reveal"><summary>¿Cómo se confirma la reserva?</summary><p>Con una señal que se descuenta del total. El resto se abona antes del evento. Te lo dejamos todo por escrito.</p></details>
-      <details class="reveal"><summary>¿Puedo elegir la decoración?</summary><p>Sí. Cuéntanos los colores y las flores de tu evento y preparamos lazos y arreglos a juego. Si tu florista prefiere encargarse, también lo coordinamos.</p></details>
-      <details class="reveal"><summary>¿Qué pasa si nos retrasamos?</summary><p>Contamos con margen en cada trayecto. Si el día se alarga más de lo previsto, las horas extra se cobran según tarifa y siempre te avisamos antes.</p></details>
-      <details class="reveal"><summary>¿Hacéis servicios fuera de la ciudad?</summary><p>Sí. Indícanos la población en el formulario y te damos un precio cerrado que incluye el desplazamiento.</p></details>
-      <details class="reveal"><summary>¿Emitís factura para empresas?</summary><p>Sí, emitimos factura para eventos corporativos y servicios contratados por empresa.</p></details>
+      <details class="rv"><summary>¿Y si llueve el día de la boda?</summary><p>No pasa nada: la capota se cierra en un momento y el coche sigue luciendo igual de bonito. Si el día acompaña, la abrimos para la llegada y las fotos.</p></details>
+      <details class="rv"><summary>¿Puedo conducirlo yo?</summary><p>No. El coche siempre va con su conductor, así tú solo te preocupas de disfrutar (o de rodar).</p></details>
+      <details class="rv"><summary>¿Con cuánta antelación hay que reservar?</summary><p>Para bodas en primavera y verano, cuanto antes mejor. Para rodajes y sesiones, a veces podemos con pocos días. Pregúntanos tu fecha.</p></details>
+      <details class="rv"><summary>¿Se puede grabar con el coche en marcha?</summary><p>Sí, siempre conducido por nosotros y coordinándolo antes con la producción: ruta, velocidad y permisos de la localización.</p></details>
+      <details class="rv"><summary>¿Puedo elegir la decoración?</summary><p>Claro. Dinos colores y flores de tu boda y preparamos lazos y arreglos a juego. Para rodajes, el coche va sin decorar salvo que nos pidáis lo contrario.</p></details>
+      <details class="rv"><summary>¿Os desplazáis fuera de la zona?</summary><p>Sí. Indícanos el lugar en el formulario y te incluimos el desplazamiento en el precio.</p></details>
     </div>
   </div>
 </section>
 
-<!-- ───────────── RESERVA ───────────── -->
-<section class="sec sec-dark" id="reserva">
+<!-- RESERVA -->
+<section class="sec sec-sand" id="reserva">
   <div class="wrap book-grid">
-    <div class="book-side">
-      <p class="kicker light reveal">Reserva</p>
-      <h2 class="reveal">Cuéntanos tu <em>evento.</em></h2>
-      <p class="book-lead reveal">Te respondemos con disponibilidad y un precio cerrado en menos de 24 horas.</p>
-      <ul class="contact reveal">
-        <li><span>Teléfono</span><a data-tel href="#"><b data-cfg="telefono"></b></a></li>
-        <li><span>WhatsApp</span><a data-wa href="#"><b>Abrir chat</b></a></li>
-        <li><span>Email</span><a data-mail href="#"><b data-cfg="email"></b></a></li>
-        <li data-ig-row><span>Instagram</span><a data-ig href="#"><b data-cfg="instagram"></b></a></li>
-      </ul>
+    <div>
+      <p class="eyebrow rv">Reserva</p>
+      <h2 class="rv">¿Está libre <em>tu fecha?</em></h2>
+      <p class="lead rv" style="margin-top:1.2rem">Escríbenos y te respondemos con disponibilidad y precio cerrado.</p>
+      <div class="contact rv">
+        <a href="#" class="wa" data-wa><span>WhatsApp</span><b>Escribir ahora →</b></a>
+        <a href="#" data-tel><span>Teléfono</span><b data-cfg="telefono"></b></a>
+        <a href="#" data-mail><span>Email</span><b data-cfg="email"></b></a>
+        <a href="#" data-ig><span>Instagram</span><b data-cfg="instagram"></b></a>
+      </div>
     </div>
 
-    <form class="book reveal" id="book" name="reserva" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="empresa-web">
+    <form class="form rv" id="form" name="reserva" method="POST" action="/" data-netlify="true" netlify-honeypot="web-empresa">
       <input type="hidden" name="form-name" value="reserva">
-      <p hidden><label>No rellenar <input name="empresa-web"></label></p>
-
+      <p hidden><label>No rellenar <input name="web-empresa"></label></p>
       <fieldset class="seg">
-        <legend>Tipo de evento</legend>
-        <label><input type="radio" name="evento" value="Boda" checked><span>Boda</span></label>
-        <label><input type="radio" name="evento" value="Evento corporativo"><span>Corporativo</span></label>
-        <label><input type="radio" name="evento" value="Comunión o bautizo"><span>Celebración</span></label>
-        <label><input type="radio" name="evento" value="Sesión de fotos / rodaje"><span>Fotos / rodaje</span></label>
-        <label><input type="radio" name="evento" value="Otro"><span>Otro</span></label>
+        <legend>¿Para qué lo necesitas?</legend>
+        <label><input type="radio" name="tipo" value="Boda" checked><span>Boda</span></label>
+        <label><input type="radio" name="tipo" value="Rodaje / publicidad"><span>Rodaje</span></label>
+        <label><input type="radio" name="tipo" value="Sesión de fotos"><span>Sesión de fotos</span></label>
+        <label><input type="radio" name="tipo" value="Otro"><span>Otro</span></label>
       </fieldset>
-
-      <div class="f2">
-        <label class="fl"><input type="date" name="fecha" required placeholder=" "><span>Fecha del evento</span></label>
-        <label class="fl">
-          <select name="tarifa">
-            <option value="Ceremonia">Ceremonia</option>
-            <option value="Día completo" selected>Día completo</option>
-            <option value="Por horas">Por horas</option>
-            <option value="No lo sé aún">No lo sé aún</option>
-          </select>
-          <span>Tarifa</span>
-        </label>
+      <div class="row">
+        <label class="field"><span class="lbl">Fecha</span><input type="date" name="fecha" required></label>
+        <label class="field"><span class="lbl">Horario aproximado</span><input name="horario" placeholder="Ej. 11:00 a 15:00"></label>
       </div>
-      <div class="f2">
-        <label class="fl"><input name="recogida" placeholder=" "><span>Lugar de recogida</span></label>
-        <label class="fl"><input name="destino" placeholder=" "><span>Ceremonia / destino</span></label>
+      <label class="field"><span class="lbl">Lugar o localización</span><input name="lugar" placeholder="Población, iglesia, finca, localización…"></label>
+      <div class="row">
+        <label class="field"><span class="lbl">Nombre</span><input name="nombre" required autocomplete="name"></label>
+        <label class="field"><span class="lbl">Teléfono</span><input name="telefono" type="tel" required autocomplete="tel"></label>
       </div>
-      <div class="f2">
-        <label class="fl"><input name="nombre" required autocomplete="name" placeholder=" "><span>Nombre</span></label>
-        <label class="fl"><input name="telefono" type="tel" required autocomplete="tel" placeholder=" "><span>Teléfono</span></label>
-      </div>
-      <label class="fl"><input name="email" type="email" autocomplete="email" placeholder=" "><span>Email (opcional)</span></label>
-      <label class="fl"><textarea name="mensaje" rows="3" placeholder=" "></textarea><span>Horarios, colores de la decoración, dudas…</span></label>
-
-      <label class="chk"><input type="checkbox" name="privacidad" required><span>Acepto que uséis mis datos para responder a esta consulta.</span></label>
-
-      <button type="submit" class="b b-accent b-block">Solicitar disponibilidad <span aria-hidden="true">→</span></button>
+      <label class="field"><span class="lbl">Email <span style="font-weight:400;color:var(--mute)">(opcional)</span></span><input name="email" type="email" autocomplete="email"></label>
+      <label class="field"><span class="lbl">Cuéntanos más</span><textarea name="mensaje" rows="3" placeholder="Colores de la boda, tipo de producción, dudas…"></textarea></label>
+      <label class="chk"><input type="checkbox" name="privacidad" required><span>Acepto que uséis mis datos solo para responder a esta consulta.</span></label>
+      <button type="submit" class="btn btn-dark btn-block">Enviar consulta</button>
     </form>
   </div>
 </section>
@@ -324,25 +559,116 @@
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr-top">
-      <p class="ftr-logo" data-cfg="marca">Cortejo</p>
-      <p class="ftr-tag">Vehículos con chófer para bodas y eventos · <span data-cfg="zona"></span></p>
+      <a href="#" class="logo"><b data-cfg="marca">La Capota</b><small>Golf Cabrio clásico · bodas y rodajes</small></a>
+      <nav class="ftr-links" aria-label="Pie">
+        <a href="#bodas">Bodas</a><a href="#rodajes">Rodajes</a><a href="#coche">El coche</a><a href="#tarifas">Tarifas</a><a href="#reserva">Reservar</a>
+      </nav>
     </div>
-    <div class="ftr-cols">
-      <div><h4>Contacto</h4><a data-tel href="#"><span data-cfg="telefono"></span></a><a data-mail href="#"><span data-cfg="email"></span></a><a data-wa href="#">WhatsApp</a></div>
-      <div><h4>Servicios</h4><a href="#ocasiones">Bodas</a><a href="#ocasiones">Eventos corporativos</a><a href="#ocasiones">Celebraciones</a><a href="#ocasiones">Fotos y rodajes</a></div>
-      <div><h4>Información</h4><a href="#tarifas">Tarifas</a><a href="#proceso">Cómo funciona</a><a href="#faq">Preguntas frecuentes</a></div>
+    <div class="ftr-bot">
+      <span>© <span id="y"></span> <span data-cfg="marca">La Capota</span> · <span data-cfg="zona"></span></span>
+      <span><a href="#" data-tel><span data-cfg="telefono"></span></a> · <a href="#" data-mail><span data-cfg="email"></span></a></span>
     </div>
-    <div class="ftr-bot"><span>© <span id="y"></span> <span data-cfg="marca">Cortejo</span></span><a href="#" class="totop">Volver arriba ↑</a></div>
   </div>
 </footer>
 
-<!-- Barra fija en móvil -->
-<nav class="mbar" aria-label="Contacto rápido">
-  <a data-tel href="#">Llamar</a>
-  <a data-wa href="#">WhatsApp</a>
-  <a href="#reserva" class="mbar-hl">Reservar</a>
-</nav>
+<div class="mbar" id="mbar">
+  <a href="#" class="btn btn-wa" data-wa>WhatsApp</a>
+  <a href="#reserva" class="btn btn-dark">Consultar fecha</a>
+</div>
 
-<script src="script.js"></script>
+<script>
+// ============================================================
+//  TUS DATOS: cambia solo este bloque
+// ============================================================
+const CONFIG = {
+  marca: "La Capota",               // nombre del negocio (provisional)
+  zona: "Tu ciudad y alrededores",   // p. ej. "Valencia y alrededores"
+  telefono: "600 000 000",
+  whatsapp: "34600000000",          // con prefijo 34, sin + ni espacios
+  email: "hola@tudominio.com",
+  instagram: "",                    // usuario sin @ ("" lo oculta)
+  anio: "1990",                     // año de tu Golf
+  color: "Blanca",                  // color de la carrocería
+  // Precios en euros. null = se muestra "A consultar"
+  precios: { boda: null, sesion: null, rodaje: null },
+  // Fotos de tu Golf, en la carpeta img/. La primera es la de portada.
+  fotos: []                         // p. ej. ["img/golf-1.jpg", "img/golf-2.jpg", "img/golf-3.jpg", "img/golf-4.jpg"]
+};
+// ============================================================
+
+document.documentElement.classList.add("js");
+const $ = (s, c = document) => c.querySelector(s);
+const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+
+// Textos
+$$("[data-cfg]").forEach(el => { const v = CONFIG[el.dataset.cfg]; if (v) el.textContent = el.dataset.cfg === "instagram" ? "@" + v : v; });
+if (CONFIG.zona && !/tu ciudad/i.test(CONFIG.zona)) $$("[data-zona-txt]").forEach(el => el.textContent = " en " + CONFIG.zona);
+
+// Contacto
+const waUrl = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Hola, quería consultar disponibilidad del Golf Cabrio.")}`;
+$$("[data-wa]").forEach(a => {
+  a.href = waUrl; a.target = "_blank"; a.rel = "noopener";
+  if (a.classList.contains("btn-wa")) a.insertAdjacentHTML("afterbegin", '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>');
+});
+$$("[data-tel]").forEach(a => a.href = "tel:+" + CONFIG.whatsapp);
+$$("[data-mail]").forEach(a => a.href = "mailto:" + CONFIG.email);
+$$("[data-ig]").forEach(a => { if (CONFIG.instagram) { a.href = "https://instagram.com/" + CONFIG.instagram; a.target = "_blank"; a.rel = "noopener"; } else a.remove(); });
+
+// Precios
+const unidad = { boda: "", sesion: " / hora", rodaje: " / jornada" };
+$$("[data-price]").forEach(el => {
+  const v = CONFIG.precios[el.dataset.price];
+  el.innerHTML = v ? `<small>Desde</small>${v} €<span style="font-size:.45em">${unidad[el.dataset.price]}</span>` : `<small>Precio</small>A consultar`;
+  if (!v && el.classList.contains("price")) el.classList.add("ask");
+});
+
+// Fotos del coche (con dibujo de reserva mientras no haya)
+const fotos = CONFIG.fotos.filter(Boolean);
+const setPhoto = (frame, src) => {
+  if (!src) return frame.classList.add("empty");
+  const img = frame.querySelector("img");
+  img.addEventListener("error", () => frame.classList.add("empty"));
+  img.src = src;
+};
+setPhoto($('[data-photo="portada"]'), fotos[0]);
+const gal = $("#gal");
+const galFotos = fotos.length > 1 ? fotos.slice(1, 4) : [fotos[0] || null];
+gal.classList.toggle("solo", galFotos.length === 1);
+galFotos.forEach((src, i) => {
+  const f = document.createElement("figure");
+  f.className = "frame";
+  f.innerHTML = `<img alt="Golf Cabriolet MK1, foto ${i + 1}" loading="lazy"><div class="illus"><svg viewBox="0 0 600 220" aria-hidden="true"><use href="#golf"/></svg></div>`;
+  gal.appendChild(f);
+  setPhoto(f, src);
+});
+
+// Cabecera, menú y barra móvil
+const hdr = $("#hdr"), mbar = $("#mbar");
+const onScroll = () => { hdr.classList.toggle("scrolled", scrollY > 10); mbar.classList.toggle("show", scrollY > innerHeight * .6); };
+addEventListener("scroll", onScroll, { passive: true }); onScroll();
+const burger = $("#burger"), menu = $("#menu");
+const setMenu = o => { menu.classList.toggle("open", o); burger.setAttribute("aria-expanded", o); document.body.style.overflow = o ? "hidden" : ""; };
+burger.addEventListener("click", () => setMenu(!menu.classList.contains("open")));
+$$("a", menu).forEach(a => a.addEventListener("click", () => setMenu(false)));
+
+// Animación al aparecer
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -6% 0px" });
+$$(".rv").forEach((el, i) => { el.style.transitionDelay = (i % 3) * 80 + "ms"; io.observe(el); });
+
+// Formulario (Netlify Forms, sin salir de la página)
+const form = $("#form");
+$$('input[type="date"]').forEach(i => i.min = new Date().toISOString().split("T")[0]);
+$$("[data-tipo]").forEach(a => a.addEventListener("click", () => { const r = $$('input[name="tipo"]', form).find(r => r.value === a.dataset.tipo); if (r) r.checked = true; }));
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const btn = form.querySelector('button[type="submit"]');
+  btn.disabled = true; btn.textContent = "Enviando…";
+  fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(new FormData(form)).toString() })
+    .then(r => { if (!r.ok) throw r; form.innerHTML = '<div class="ok"><h3>¡Recibido! <em>Gracias.</em></h3><p>Te escribimos muy pronto con la disponibilidad y el precio.</p></div>'; })
+    .catch(() => { btn.disabled = false; btn.textContent = "Reintentar"; alert("No se ha podido enviar. Escríbenos por WhatsApp, por favor."); });
+});
+
+$("#y").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
