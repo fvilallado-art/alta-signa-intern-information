@@ -3,199 +3,346 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coche para bodas · Volkswagen Golf</title>
-  <meta name="description" content="Alquiler de Volkswagen Golf decorado para bodas, con chófer. Llega a tu boda con estilo.">
+  <title>Cortejo · Vehículos con chófer para bodas y eventos</title>
+  <meta name="description" content="Alquiler de vehículos con chófer para bodas, eventos corporativos y celebraciones. Decoración a medida y precio cerrado.">
+  <meta property="og:title" content="Cortejo · Vehículos con chófer para bodas y eventos">
+  <meta property="og:description" content="Llegar también es parte del día. Vehículo con chófer, decoración a medida y precio cerrado.">
+  <meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/e48a6271-7068-4e89-8558-3f7aa95ea134.jpg">
+  <meta name="theme-color" content="#0f0e0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f0e0d'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='20' fill='%23f4f1ec' text-anchor='middle' font-style='italic'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://d2ol7oe51mr4n9.cloudfront.net">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/e48a6271-7068-4e89-8558-3f7aa95ea134.jpg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!--
-    ===========================================================
-    EDITA TUS DATOS EN script.js (bloque CONFIG, arriba del todo).
-    Pon la foto de tu Golf en img/golf.jpg (y más fotos en img/galeria-1.jpg ... galeria-6.jpg)
-    ===========================================================
-  -->
+<!-- Tus datos (teléfono, WhatsApp, precios…) se editan en script.js → CONFIG -->
 
-  <header class="nav" id="top">
-    <a href="#top" class="brand" data-cfg="nombre">Tu Empresa</a>
-    <nav class="nav-links" id="navLinks">
-      <a href="#coche">El coche</a>
-      <a href="#servicio">Servicio</a>
-      <a href="#galeria">Galería</a>
+<header class="hdr" id="hdr">
+  <div class="hdr-in">
+    <a href="#" class="logo" aria-label="Inicio"><span data-cfg="marca">Cortejo</span></a>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#ocasiones">Ocasiones</a>
+      <a href="#vehiculo">El vehículo</a>
+      <a href="#tarifas">Tarifas</a>
+      <a href="#proceso">Cómo funciona</a>
       <a href="#faq">Preguntas</a>
-      <a href="#reserva" class="btn btn-small">Reservar</a>
+      <a href="#reserva" class="menu-cta">Reservar fecha</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span>
-    </button>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-media">
-      <img src="img/golf.jpg" alt="Volkswagen Golf decorado para boda" class="photo" data-fallback>
+    <div class="hdr-cta">
+      <a class="hdr-tel" data-tel href="#"><span data-cfg="telefono"></span></a>
+      <a href="#reserva" class="b b-light">Reservar</a>
+      <button class="burger" id="burger" aria-label="Menú" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
     </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="eyebrow">Coche de boda · <span data-cfg="zona">Tu ciudad</span></p>
-      <h1>Llega al <em>“sí, quiero”</em><br>con estilo</h1>
-      <p class="lead">Volkswagen Golf impecable, decorado a juego con tu boda y con chófer. Tú solo disfruta del trayecto.</p>
-      <div class="hero-actions">
-        <a href="#reserva" class="btn">Consultar disponibilidad</a>
-        <a href="#" class="btn btn-ghost" data-wa>Escríbenos por WhatsApp</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ───────────── HERO ───────────── -->
+<section class="hero">
+  <picture class="hero-img">
+    <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/e48a6271-7068-4e89-8558-3f7aa95ea134.jpg" alt="Coche negro decorado con lazo de seda blanca frente a una finca iluminada al anochecer" fetchpriority="high">
+  </picture>
+  <div class="hero-shade"></div>
+
+  <div class="hero-body wrap">
+    <p class="kicker light reveal"><span data-cfg="zona"></span></p>
+    <h1 class="reveal">Llegar también<br>es parte <em>del día.</em></h1>
+    <p class="hero-sub reveal">Vehículo con chófer para bodas, eventos y celebraciones. Lo decoramos a juego con tu evento y nos ocupamos de cada trayecto, con precio cerrado.</p>
+  </div>
+
+  <form class="quick reveal" id="quick" aria-label="Consultar disponibilidad">
+    <label class="qf">
+      <span>Evento</span>
+      <select name="evento">
+        <option>Boda</option>
+        <option>Evento corporativo</option>
+        <option>Comunión o bautizo</option>
+        <option>Sesión de fotos / rodaje</option>
+        <option>Otro</option>
+      </select>
+    </label>
+    <label class="qf">
+      <span>Fecha</span>
+      <input type="date" name="fecha" required>
+    </label>
+    <label class="qf">
+      <span>Recogida</span>
+      <input type="text" name="recogida" placeholder="Población o dirección">
+    </label>
+    <button class="b b-accent qf-btn" type="submit">Consultar disponibilidad <span aria-hidden="true">→</span></button>
+  </form>
+</section>
+
+<!-- ───────────── GARANTÍAS ───────────── -->
+<section class="assure" aria-label="Lo que incluye">
+  <div class="wrap assure-in">
+    <div><b>Chófer incluido</b><span>Uniformado y discreto</span></div>
+    <div><b>Decoración a medida</b><span>Flores y lazos a juego</span></div>
+    <div><b>Precio cerrado</b><span>Sin extras sorpresa</span></div>
+    <div><b>Respuesta en 24 h</b><span>Por teléfono o WhatsApp</span></div>
+  </div>
+</section>
+
+<!-- ───────────── INTRO ───────────── -->
+<section class="intro sec">
+  <div class="wrap intro-grid">
+    <div class="intro-text">
+      <p class="kicker reveal">La casa</p>
+      <p class="statement reveal">Un día así no admite improvisación. Por eso <em>cuidamos el coche, el horario y cada detalle</em> para que tú solo tengas que disfrutar del trayecto.</p>
+      <div class="intro-cols reveal">
+        <p>Antes del evento revisamos contigo horarios, direcciones y tiempos de espera. El coche llega limpio, decorado y antes de la hora.</p>
+        <p>Durante el día, el chófer está pendiente de ti y del fotógrafo: abre la puerta, espera lo necesario y lleva a cada uno a su sitio.</p>
       </div>
     </div>
-    <a href="#coche" class="scroll-hint" aria-label="Bajar">↓</a>
-  </section>
+    <figure class="intro-fig reveal">
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/13685517-abc1-46b2-8aac-1235b8568bf7.jpg" alt="Ramo de rosas blancas y olivo atado con lazo de seda a la manilla del coche" loading="lazy">
+      <figcaption>Decoración floral incluida, a juego con tu evento.</figcaption>
+    </figure>
+  </div>
+</section>
 
-  <!-- PUNTOS FUERTES -->
-  <section class="strip">
-    <div class="strip-item"><strong>Chófer</strong><span>vestido para la ocasión</span></div>
-    <div class="strip-item"><strong>Decoración</strong><span>flores y lazos a tu gusto</span></div>
-    <div class="strip-item"><strong>Puntualidad</strong><span>llegamos antes que nadie</span></div>
-    <div class="strip-item"><strong>Fotos</strong><span>tiempo para tu sesión</span></div>
-  </section>
+<!-- ───────────── OCASIONES ───────────── -->
+<section class="sec sec-dark" id="ocasiones">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker light reveal">Ocasiones</p>
+      <h2 class="reveal">Para cualquier día<br>que merezca <em>una buena entrada.</em></h2>
+    </div>
+    <div class="occ">
+      <a href="#reserva" class="occ-card reveal" data-evento="Boda">
+        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/3b0b3050-9f10-402c-bb95-0955a7138cd3.jpg" alt="Pareja de novios caminando entre olivos hacia el coche decorado" loading="lazy">
+        <div class="occ-txt"><span>01</span><h3>Bodas</h3><p>Recogida, llegada a la ceremonia, sesión de fotos y traslado al banquete.</p></div>
+      </a>
+      <a href="#reserva" class="occ-card reveal" data-evento="Evento corporativo">
+        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/3c7a5355-1ca2-44c1-86c1-3394b7ab2cab.jpg" alt="Coche llegando de noche a la entrada de un hotel para una gala" loading="lazy">
+        <div class="occ-txt"><span>02</span><h3>Corporativo</h3><p>Traslado de invitados, directivos o ponentes. Galas, congresos y presentaciones.</p></div>
+      </a>
+      <a href="#reserva" class="occ-card reveal" data-evento="Comunión o bautizo">
+        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/51c7a20d-a4e4-431e-9e8d-61c32bdec8f7.jpg" alt="Novia bajando del coche sobre un empedrado" loading="lazy">
+        <div class="occ-txt"><span>03</span><h3>Celebraciones</h3><p>Comuniones, bautizos, aniversarios, graduaciones o una pedida de mano.</p></div>
+      </a>
+      <a href="#reserva" class="occ-card reveal" data-evento="Sesión de fotos / rodaje">
+        <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/d9faec7e-d2d6-4dd8-b763-d21146154462.jpg" alt="Chófer con guantes blancos abriendo la puerta del coche frente a una iglesia" loading="lazy">
+        <div class="occ-txt"><span>04</span><h3>Fotos y rodajes</h3><p>Preboda, postboda, videoclips o publicidad. Coche y conductor por horas.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
 
-  <!-- EL COCHE -->
-  <section class="section split" id="coche">
-    <div class="split-media">
-      <img src="img/golf.jpg" alt="Volkswagen Golf para bodas" class="photo rounded" data-fallback>
-    </div>
-    <div class="split-text">
-      <p class="eyebrow dark">El coche</p>
-      <h2>Volkswagen Golf</h2>
-      <p>Un clásico moderno: elegante, cómodo y siempre reluciente. Lo preparamos a fondo antes de cada boda para que salga perfecto en todas las fotos.</p>
-      <ul class="specs">
-        <li><span>Plazas</span><strong>Novia + acompañante</strong></li>
-        <li><span>Interior</span><strong>Limpio y climatizado</strong></li>
-        <li><span>Decoración</span><strong>Incluida</strong></li>
-        <li><span>Conductor</span><strong>Incluido</strong></li>
-      </ul>
-      <a href="#reserva" class="btn">Lo quiero para mi boda</a>
-    </div>
-  </section>
-
-  <!-- SERVICIO -->
-  <section class="section alt" id="servicio">
-    <div class="section-head">
-      <p class="eyebrow dark">Qué incluye</p>
-      <h2>Todo listo para tu gran día</h2>
-    </div>
-    <div class="cards">
-      <article class="card">
-        <div class="card-num">01</div>
-        <h3>Recogida</h3>
-        <p>Te recogemos en casa, en el hotel o donde te estés preparando, con margen de sobra.</p>
-      </article>
-      <article class="card">
-        <div class="card-num">02</div>
-        <h3>Llegada a la ceremonia</h3>
-        <p>Entrada tranquila y elegante. Te abrimos la puerta y esperamos lo que haga falta.</p>
-      </article>
-      <article class="card">
-        <div class="card-num">03</div>
-        <h3>Sesión de fotos</h3>
-        <p>Te llevamos al lugar de las fotos y el coche posa con vosotros.</p>
-      </article>
-      <article class="card">
-        <div class="card-num">04</div>
-        <h3>Al banquete</h3>
-        <p>Último trayecto ya como recién casados, directos a la celebración.</p>
-      </article>
-    </div>
-
-    <div class="price">
+<!-- ───────────── VEHÍCULO ───────────── -->
+<section class="sec" id="vehiculo">
+  <div class="wrap">
+    <div class="sec-head row">
       <div>
-        <p class="eyebrow dark">Precio</p>
-        <p class="price-value" data-cfg="precio">Consultar</p>
-        <p class="price-note">Decoración y chófer incluidos. Pregunta por trayectos largos o servicios extra.</p>
+        <p class="kicker reveal">El vehículo</p>
+        <h2 class="reveal">Volkswagen <em>Golf</em></h2>
       </div>
-      <a href="#reserva" class="btn">Pedir presupuesto</a>
+      <p class="sec-lead reveal">Compacto, elegante y cómodo. Entra donde otros no llegan: cascos históricos, fincas con caminos estrechos y calles sin aparcamiento.</p>
     </div>
-  </section>
 
-  <!-- GALERÍA -->
-  <section class="section" id="galeria">
-    <div class="section-head">
-      <p class="eyebrow dark">Galería</p>
-      <h2>Así lucirá en tu boda</h2>
+    <div class="car reveal">
+      <div class="car-photo" id="carPhoto">
+        <img src="img/golf.jpg" alt="Volkswagen Golf" loading="lazy" data-optional>
+        <div class="car-ph">
+          <svg viewBox="0 0 400 140" aria-hidden="true"><path d="M20 108h360M48 108c0-14 11-25 25-25s25 11 25 25M302 108c0-14 11-25 25-25s25 11 25 25M38 96l6-26c3-10 10-15 20-17l52-10 46-24c8-4 16-6 25-6h70c12 0 22 5 30 14l26 30 40 8c10 2 17 10 17 20v11" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <span>Añade la foto de tu Golf en <code>img/golf.jpg</code></span>
+        </div>
+      </div>
+      <dl class="specs">
+        <div><dt>Modelo</dt><dd>Volkswagen Golf</dd></div>
+        <div><dt>Color</dt><dd data-cfg="color"></dd></div>
+        <div><dt>Pasajeros</dt><dd>Hasta 4 + chófer</dd></div>
+        <div><dt>Confort</dt><dd>Climatizador · interior impecable</dd></div>
+        <div><dt>Decoración</dt><dd>Lazos y flores a juego, incluida</dd></div>
+        <div><dt>Zona</dt><dd data-cfg="zona"></dd></div>
+      </dl>
     </div>
-    <div class="gallery" id="gallery"></div>
-  </section>
+  </div>
+</section>
 
-  <!-- FAQ -->
-  <section class="section alt" id="faq">
-    <div class="section-head">
-      <p class="eyebrow dark">Preguntas frecuentes</p>
-      <h2>Lo que más nos preguntan</h2>
+<!-- ───────────── TARIFAS ───────────── -->
+<section class="sec sec-bone" id="tarifas">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="kicker reveal">Tarifas</p>
+      <h2 class="reveal">Precio cerrado, <em>sin letra pequeña.</em></h2>
+      <p class="sec-lead reveal">Todas las tarifas incluyen chófer, combustible, decoración y limpieza del vehículo.</p>
+    </div>
+    <div class="plans">
+      <article class="plan reveal">
+        <h3>Ceremonia</h3>
+        <p class="plan-desc">El trayecto clave: de casa a la ceremonia, y de la ceremonia al banquete.</p>
+        <p class="plan-price" data-price="ceremonia"></p>
+        <ul>
+          <li>Recogida y llegada a la ceremonia</li>
+          <li>Traslado al banquete</li>
+          <li>Decoración estándar</li>
+          <li>Hasta 3 horas de servicio</li>
+        </ul>
+        <a href="#reserva" class="b b-line" data-plan="Ceremonia">Pedir presupuesto</a>
+      </article>
+      <article class="plan plan-hl reveal">
+        <p class="plan-tag">El más elegido</p>
+        <h3>Día completo</h3>
+        <p class="plan-desc">Todo el día a vuestra disposición, incluida la sesión de fotos.</p>
+        <p class="plan-price" data-price="completo"></p>
+        <ul>
+          <li>Todos los trayectos del día</li>
+          <li>Parada para sesión de fotos</li>
+          <li>Decoración floral personalizada</li>
+          <li>Hasta 6 horas de servicio</li>
+        </ul>
+        <a href="#reserva" class="b b-accent" data-plan="Día completo">Pedir presupuesto</a>
+      </article>
+      <article class="plan reveal">
+        <h3>Por horas</h3>
+        <p class="plan-desc">Eventos corporativos, celebraciones, sesiones de fotos y rodajes.</p>
+        <p class="plan-price" data-price="hora"></p>
+        <ul>
+          <li>Mínimo 2 horas</li>
+          <li>Rutas y paradas a medida</li>
+          <li>Decoración opcional</li>
+          <li>Factura para empresas</li>
+        </ul>
+        <a href="#reserva" class="b b-line" data-plan="Por horas">Pedir presupuesto</a>
+      </article>
+    </div>
+    <p class="plans-note reveal">Desplazamientos fuera de la zona habitual y horas extra, bajo presupuesto.</p>
+  </div>
+</section>
+
+<!-- ───────────── PROCESO ───────────── -->
+<section class="sec" id="proceso">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker reveal">Cómo funciona</p>
+      <h2 class="reveal">De la consulta <em>al “sí, quiero”.</em></h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><span class="n">1</span><h3>Consulta</h3><p>Nos dices fecha, horario y lugares. Te confirmamos disponibilidad y precio en menos de 24 h.</p></li>
+      <li class="reveal"><span class="n">2</span><h3>Reserva</h3><p>Una señal bloquea tu fecha. Desde ese momento el coche es tuyo ese día.</p></li>
+      <li class="reveal"><span class="n">3</span><h3>Detalles</h3><p>Unos días antes cerramos ruta, tiempos y decoración: colores, flores, lazos.</p></li>
+      <li class="reveal"><span class="n">4</span><h3>El gran día</h3><p>Llegamos antes de la hora, con el coche impecable. Tú solo disfruta.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────────── BANNER ───────────── -->
+<section class="banner">
+  <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3FG1gOl9fcOANJGafnfGZ8nfDVf/4a24b887-98b4-40ca-8192-1dda38b4c894.jpg" alt="" loading="lazy">
+  <div class="banner-shade"></div>
+  <div class="wrap banner-in">
+    <p class="banner-q reveal">“Los invitados recuerdan<br>cómo llegaste.”</p>
+    <a href="#reserva" class="b b-light reveal">Reservar mi fecha</a>
+  </div>
+</section>
+
+<!-- ───────────── FAQ ───────────── -->
+<section class="sec" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <p class="kicker reveal">Preguntas frecuentes</p>
+      <h2 class="reveal">Lo que nos <em>suelen preguntar.</em></h2>
+      <p class="sec-lead reveal">¿No encuentras tu respuesta? <a href="#" data-wa class="ul">Escríbenos por WhatsApp</a>.</p>
     </div>
     <div class="faq">
-      <details>
-        <summary>¿Con cuánta antelación debo reservar?</summary>
-        <p>Cuanto antes, mejor: los sábados de primavera y verano vuelan. Escríbenos con tu fecha y te confirmamos al momento.</p>
-      </details>
-      <details>
-        <summary>¿Puedo elegir la decoración?</summary>
-        <p>Sí. Dinos los colores o las flores de tu boda y adaptamos lazos y arreglos para que vaya a juego.</p>
-      </details>
-      <details>
-        <summary>¿El precio incluye chófer?</summary>
-        <p>Sí, siempre conducimos nosotros. Tú solo te sientas y disfrutas.</p>
-      </details>
-      <details>
-        <summary>¿Cuántas horas dura el servicio?</summary>
-        <p>Cubrimos los trayectos del día: recogida, ceremonia, fotos y banquete. Si necesitas algo distinto, lo hablamos.</p>
-      </details>
-      <details>
-        <summary>¿Os desplazáis fuera de la ciudad?</summary>
-        <p>Sí, consúltanos el lugar y te damos precio sin compromiso.</p>
-      </details>
+      <details class="reveal"><summary>¿Con cuánta antelación tengo que reservar?</summary><p>Lo antes posible: los sábados de mayo a octubre se reservan con meses de antelación. Escríbenos con tu fecha y te confirmamos al momento si está libre.</p></details>
+      <details class="reveal"><summary>¿Cómo se confirma la reserva?</summary><p>Con una señal que se descuenta del total. El resto se abona antes del evento. Te lo dejamos todo por escrito.</p></details>
+      <details class="reveal"><summary>¿Puedo elegir la decoración?</summary><p>Sí. Cuéntanos los colores y las flores de tu evento y preparamos lazos y arreglos a juego. Si tu florista prefiere encargarse, también lo coordinamos.</p></details>
+      <details class="reveal"><summary>¿Qué pasa si nos retrasamos?</summary><p>Contamos con margen en cada trayecto. Si el día se alarga más de lo previsto, las horas extra se cobran según tarifa y siempre te avisamos antes.</p></details>
+      <details class="reveal"><summary>¿Hacéis servicios fuera de la ciudad?</summary><p>Sí. Indícanos la población en el formulario y te damos un precio cerrado que incluye el desplazamiento.</p></details>
+      <details class="reveal"><summary>¿Emitís factura para empresas?</summary><p>Sí, emitimos factura para eventos corporativos y servicios contratados por empresa.</p></details>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- RESERVA -->
-  <section class="section booking" id="reserva">
-    <div class="booking-text">
-      <p class="eyebrow">Reserva</p>
-      <h2>¿Está libre tu fecha?</h2>
-      <p>Cuéntanos cuándo y dónde es la boda y te respondemos lo antes posible.</p>
-      <ul class="contact-list">
-        <li><span>Teléfono</span><a href="#" data-tel data-cfg="telefono">—</a></li>
-        <li><span>WhatsApp</span><a href="#" data-wa>Enviar mensaje</a></li>
-        <li><span>Email</span><a href="#" data-mail data-cfg="email">—</a></li>
-        <li><span>Instagram</span><a href="#" data-ig data-cfg="instagram">—</a></li>
+<!-- ───────────── RESERVA ───────────── -->
+<section class="sec sec-dark" id="reserva">
+  <div class="wrap book-grid">
+    <div class="book-side">
+      <p class="kicker light reveal">Reserva</p>
+      <h2 class="reveal">Cuéntanos tu <em>evento.</em></h2>
+      <p class="book-lead reveal">Te respondemos con disponibilidad y un precio cerrado en menos de 24 horas.</p>
+      <ul class="contact reveal">
+        <li><span>Teléfono</span><a data-tel href="#"><b data-cfg="telefono"></b></a></li>
+        <li><span>WhatsApp</span><a data-wa href="#"><b>Abrir chat</b></a></li>
+        <li><span>Email</span><a data-mail href="#"><b data-cfg="email"></b></a></li>
+        <li data-ig-row><span>Instagram</span><a data-ig href="#"><b data-cfg="instagram"></b></a></li>
       </ul>
     </div>
 
-    <!-- Netlify Forms: los envíos aparecen en tu panel de Netlify > Forms -->
-    <form class="form" name="reserva" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html">
+    <form class="book reveal" id="book" name="reserva" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="empresa-web">
       <input type="hidden" name="form-name" value="reserva">
-      <p class="hidden"><label>No rellenar: <input name="bot-field"></label></p>
-      <label>Nombre<input name="nombre" required autocomplete="name"></label>
-      <div class="row">
-        <label>Teléfono<input name="telefono" type="tel" required autocomplete="tel"></label>
-        <label>Fecha de la boda<input name="fecha" type="date" required></label>
+      <p hidden><label>No rellenar <input name="empresa-web"></label></p>
+
+      <fieldset class="seg">
+        <legend>Tipo de evento</legend>
+        <label><input type="radio" name="evento" value="Boda" checked><span>Boda</span></label>
+        <label><input type="radio" name="evento" value="Evento corporativo"><span>Corporativo</span></label>
+        <label><input type="radio" name="evento" value="Comunión o bautizo"><span>Celebración</span></label>
+        <label><input type="radio" name="evento" value="Sesión de fotos / rodaje"><span>Fotos / rodaje</span></label>
+        <label><input type="radio" name="evento" value="Otro"><span>Otro</span></label>
+      </fieldset>
+
+      <div class="f2">
+        <label class="fl"><input type="date" name="fecha" required placeholder=" "><span>Fecha del evento</span></label>
+        <label class="fl">
+          <select name="tarifa">
+            <option value="Ceremonia">Ceremonia</option>
+            <option value="Día completo" selected>Día completo</option>
+            <option value="Por horas">Por horas</option>
+            <option value="No lo sé aún">No lo sé aún</option>
+          </select>
+          <span>Tarifa</span>
+        </label>
       </div>
-      <label>Lugar (ceremonia / banquete)<input name="lugar"></label>
-      <label>Mensaje<textarea name="mensaje" rows="4" placeholder="Horarios, colores de la decoración, dudas…"></textarea></label>
-      <button type="submit" class="btn btn-full">Enviar solicitud</button>
-      <p class="form-note">Sin compromiso. Te contestamos en menos de 24 h.</p>
+      <div class="f2">
+        <label class="fl"><input name="recogida" placeholder=" "><span>Lugar de recogida</span></label>
+        <label class="fl"><input name="destino" placeholder=" "><span>Ceremonia / destino</span></label>
+      </div>
+      <div class="f2">
+        <label class="fl"><input name="nombre" required autocomplete="name" placeholder=" "><span>Nombre</span></label>
+        <label class="fl"><input name="telefono" type="tel" required autocomplete="tel" placeholder=" "><span>Teléfono</span></label>
+      </div>
+      <label class="fl"><input name="email" type="email" autocomplete="email" placeholder=" "><span>Email (opcional)</span></label>
+      <label class="fl"><textarea name="mensaje" rows="3" placeholder=" "></textarea><span>Horarios, colores de la decoración, dudas…</span></label>
+
+      <label class="chk"><input type="checkbox" name="privacidad" required><span>Acepto que uséis mis datos para responder a esta consulta.</span></label>
+
+      <button type="submit" class="b b-accent b-block">Solicitar disponibilidad <span aria-hidden="true">→</span></button>
     </form>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer">
-    <p class="brand" data-cfg="nombre">Tu Empresa</p>
-    <p>Coche para bodas · <span data-cfg="zona">Tu ciudad</span></p>
-    <p class="small">© <span id="year"></span> <span data-cfg="nombre">Tu Empresa</span></p>
-  </footer>
+</main>
 
-  <a href="#" class="wa-float" data-wa aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></svg>
-  </a>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <p class="ftr-logo" data-cfg="marca">Cortejo</p>
+      <p class="ftr-tag">Vehículos con chófer para bodas y eventos · <span data-cfg="zona"></span></p>
+    </div>
+    <div class="ftr-cols">
+      <div><h4>Contacto</h4><a data-tel href="#"><span data-cfg="telefono"></span></a><a data-mail href="#"><span data-cfg="email"></span></a><a data-wa href="#">WhatsApp</a></div>
+      <div><h4>Servicios</h4><a href="#ocasiones">Bodas</a><a href="#ocasiones">Eventos corporativos</a><a href="#ocasiones">Celebraciones</a><a href="#ocasiones">Fotos y rodajes</a></div>
+      <div><h4>Información</h4><a href="#tarifas">Tarifas</a><a href="#proceso">Cómo funciona</a><a href="#faq">Preguntas frecuentes</a></div>
+    </div>
+    <div class="ftr-bot"><span>© <span id="y"></span> <span data-cfg="marca">Cortejo</span></span><a href="#" class="totop">Volver arriba ↑</a></div>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<!-- Barra fija en móvil -->
+<nav class="mbar" aria-label="Contacto rápido">
+  <a data-tel href="#">Llamar</a>
+  <a data-wa href="#">WhatsApp</a>
+  <a href="#reserva" class="mbar-hl">Reservar</a>
+</nav>
+
+<script src="script.js"></script>
 </body>
 </html>
